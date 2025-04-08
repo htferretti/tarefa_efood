@@ -7,15 +7,22 @@ export const FooterContainer = styled.footer`
     text-align: center;
     color: ${colors.red};
 
+    > img {
+        width: 125px;
+    }
+
     p {
         font-size: 10px;
     }
 `
 
 export const SocialDiv = styled.div`
-    margin: 40px 0 80px 0;
+    margin: 40px auto 80px auto;
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
     
     img {
-        margin: 0 8px 0 8px;
+        width: 24px;
     }
 `

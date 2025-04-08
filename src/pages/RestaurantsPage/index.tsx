@@ -24,7 +24,47 @@ const restaurants: RestaurantModel[] =[
         note: '4.6',
         description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
         url: '/la-dolce-vita-trattoria'
-    }
+    },
+    {
+        id: 3,
+        image: restaurant2,
+        highlight: false,
+        category: 'Italiana',
+        name: 'La Dolce Vita Trattoria',
+        note: '4.6',
+        description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+        url: '/la-dolce-vita-trattoria'
+    },
+    {
+        id: 4,
+        image: restaurant2,
+        highlight: false,
+        category: 'Italiana',
+        name: 'La Dolce Vita Trattoria',
+        note: '4.6',
+        description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+        url: '/la-dolce-vita-trattoria'
+    },
+    {
+        id: 5,
+        image: restaurant2,
+        highlight: false,
+        category: 'Italiana',
+        name: 'La Dolce Vita Trattoria',
+        note: '4.6',
+        description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+        url: '/la-dolce-vita-trattoria'
+    },
+    {
+        id: 6,
+        image: restaurant2,
+        highlight: false,
+        category: 'Italiana',
+        name: 'La Dolce Vita Trattoria',
+        note: '4.6',
+        description: 'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+        url: '/la-dolce-vita-trattoria'
+    },
 ]
 
 const RestaurantsPages = () => (

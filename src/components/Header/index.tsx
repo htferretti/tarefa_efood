@@ -41,20 +41,22 @@ const Header = () => {
     return (
     <>
         <HeaderContainer>
-            <div><h3>Restaurantes</h3></div>
-            <div><img alt="efood" src={logo}></img></div>
-            <div
-                onClick={productsLength ? () => setModalIsOpen(true) : undefined}
-                style={{ cursor: productsLength ? "pointer" : "default" }}
-            >
-                <span>
-                    {cart.length} produto(s) no carrinho
-                </span>
+            <div>
+                <div><h3>Restaurantes</h3></div>
+                <div><img alt="efood" src={logo}></img></div>
+                <div
+                    onClick={productsLength ? () => setModalIsOpen(true) : undefined}
+                    style={{ cursor: productsLength ? "pointer" : "default" }}
+                >
+                    <span>
+                        {cart.length} produto(s) no carrinho
+                    </span>
+                </div>
             </div>
         </HeaderContainer>
         <Banner image={image}>
-            <p>{category}</p>
-            <h2>{name}</h2>
+            <div><p>{category}</p>
+            <h2>{name}</h2></div>
         </Banner>
         <CartModal isOpen={modalIsOpen}>
             { total &&

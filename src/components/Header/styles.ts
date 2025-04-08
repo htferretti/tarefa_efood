@@ -10,24 +10,34 @@ type Props = {
 
 export const HeaderContainer = styled.header`
     background-image: url(${background});
-    text-align: center;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    color: ${colors.red}
+    padding: 40px 0;
+
+    > div {
+        width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: ${colors.red}
+    }
 `
 
 export const Banner = styled.div<Props>`
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url(${(props) => props.image});
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(${(props) => props.image});
     background-size: cover;
     background-position: center;
     padding: 40px;
     color: ${colors.white};
     font-size: 32px;
 
+
+    div {
+        width: 1024px;
+        margin: 0 auto;
+    }
 
     p {
         font-weight: 100;

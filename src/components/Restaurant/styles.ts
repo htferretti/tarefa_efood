@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import { colors } from "../../styles";
 
 export const Container = styled.div`
-    width: 100%;
+    width: 472px;
     position: relative;
 
-    img {
+    > img {
         width: 100%;
+        height: 217px;
         display: block;
     }
 `
@@ -17,7 +18,9 @@ export const Info = styled.div`
     border: 1px solid ${colors.red};
     border-top: none;
     color: ${colors.red};
-    padding: 16px;
+    width: 100%;
+    height: 181px;
+    padding: 8px;
     font-size: 14px;
 
     div {
@@ -37,7 +40,7 @@ export const Info = styled.div`
     }
 
     p {
-        margin: 16px 0;
+        margin: 26px 0;
     }
 `
 
