@@ -31,9 +31,11 @@ const Product = ({ image, name, description, description2, people, price }: Prop
     return (
         <>
             <ProductDiv>
-                <img alt={image} src={image} />
-                <h3>{name}</h3>
-                <p>{description}</p>
+                <div>
+                    <img alt={image} src={image} />
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                </div>
                 <button onClick={() => setModalIsOpen(true)}>Mais detalhes</button>
             </ProductDiv>
 

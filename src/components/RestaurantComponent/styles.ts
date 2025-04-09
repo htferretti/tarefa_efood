@@ -19,8 +19,7 @@ export const Info = styled.div`
     border-top: none;
     color: ${colors.red};
     width: 100%;
-    height: 181px;
-    padding: 8px;
+    padding: 8px 8px 12px 8px;
     font-size: 14px;
 
     div {

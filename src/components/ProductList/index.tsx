@@ -1,6 +1,7 @@
-import ProductModel from "../../models/ProductModel"
 import Product from "../Product"
 import { List } from "./styles"
+
+import { ProductModel } from "../../pages/RestaurantPage"
 
 export type Props = {
     products: ProductModel[]
@@ -13,12 +14,12 @@ const ProductList = ({ products }: Props) => {
         { products.map((product) => (
             <Product 
                 key={product.id}
-                image={product.image}
-                name={product.name}
-                description={product.description}
-                description2={product.description2}
-                people={product.people}
-                price={product.price}
+                image={product.foto}
+                name={product.nome}
+                description={product.descricao}
+                description2={product.descricao}
+                people={product.porcao}
+                price={product.preco}
             />
             ))}
         </List>

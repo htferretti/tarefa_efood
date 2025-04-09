@@ -8,6 +8,9 @@ export const ProductDiv = styled.div`
     padding: 16px;
     color: ${colors.biege};
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     img {
         width: 100%;
@@ -45,6 +48,7 @@ export const ProductModal = styled(Modal)`
 
     img {
         margin-right: 32px;
+        width: 280px;
     }
 
     h2 {

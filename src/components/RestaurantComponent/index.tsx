@@ -8,12 +8,11 @@ type Props = {
     highlight: boolean
     category: string
     name: string
-    note: string
+    note: number
     description: string
-    url: string
 }
 
-const Restaurant = ({ image, highlight, category, name, note, description, url }: Props) => (
+const RestaurantComponent = ({ image, highlight, category, name, note, description }: Props) => (
     <Container>
         <img alt="imagem" src={image} />
         <TagAbsolute>
@@ -28,9 +27,9 @@ const Restaurant = ({ image, highlight, category, name, note, description, url }
                 <span>{note} <img alt="estrela" src={estrela} /></span>
             </div>
             <p>{description}</p>
-            <ButtonLink to={url} state={{ image, category, name }}>Saiba mais</ButtonLink>
+            <ButtonLink to={name} state={{ image, category, name }}>Saiba mais</ButtonLink>
         </Info>
     </Container>
 )
 
-export default Restaurant
+export default RestaurantComponent
