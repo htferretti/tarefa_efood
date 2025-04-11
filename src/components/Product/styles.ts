@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 import { colors } from "../../styles";
 
 export const ProductDiv = styled.div`
-    width: 472px;
+    width: 320px;
     background: ${colors.red};
     padding: 16px;
     color: ${colors.biege};
