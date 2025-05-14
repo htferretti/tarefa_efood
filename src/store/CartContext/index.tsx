@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useContext, useState } from "react"
 
 type Product = {
+    id: number
     image: string
     name: string
     price: number

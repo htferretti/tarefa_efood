@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { useCart } from '../CartContext';
+import { useCart } from '../../store/CartContext';
 import { ProductDiv, XButton, CartButton, ProductModal } from './styles'
 
 type Props = {
@@ -17,7 +17,9 @@ const Product = ({ image, name, description, description2, people, price }: Prop
     const { addToCart } = useCart()
 
     const addAoCarrinho = () => {
-        addToCart({ image, name, price })
+        const id = Date.now() + Math.floor(Math.random() * 1000)
+
+        addToCart({ id, image, name, price })
         setModalIsOpen(false)
     }
 

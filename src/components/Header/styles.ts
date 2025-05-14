@@ -62,9 +62,8 @@ export const CartModal = styled(Modal)`
         margin-right: 32px;
     }
 
-    h2 {
+    label {
         font-size: 18px;
-        margin-bottom: 16px;
     }
 
     p {
@@ -76,6 +75,7 @@ export const CartModal = styled(Modal)`
         background: ${colors.darkBiege};
         border: none;
         padding: 8px;
+        margin-bottom: 18px;
     }
 
     button {
